@@ -12,7 +12,7 @@ def find_kid(name):
 
 def all_fives(kid):
      marks = Mark.objects.filter(schoolkid=kid)
-     bad = marks.filter(points__lt=5)
+     bad = marks.filter(points__lt=4)
      bad.update(points=5)
 
 def remove_chastisements(kid):
