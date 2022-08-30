@@ -4,7 +4,7 @@ from datacenter.models import (Chastisement, Commendation, Lesson, Mark,
 def find_kid(name):
     return Schoolkid.objects.get(full_name__contains=name)
 
-def all_fives(kid):
+def set_all_fives(kid):
      marks = Mark.objects.filter(schoolkid=kid)
      bad = marks.filter(points__lt=4)
      bad.update(points=5)

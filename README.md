@@ -20,7 +20,7 @@
 ### API
 #### find_kid(name)
 Ищет ученика по имени
-#### all_fives(kid)
+#### set_all_fives(kid)
 Заменяет все 3 и 2 на 5
 #### remove_chastisements(kid)
 Удаляет все замечания
